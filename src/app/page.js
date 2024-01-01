@@ -2,8 +2,10 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div>
-      Homepage
+    <div style={{
+      minHeight: "100vh"
+    }}>
+      <p>Homepage</p>
     </div>
   )
 }
