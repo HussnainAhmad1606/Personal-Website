@@ -22,7 +22,7 @@ function HeroSection() {
               <img src="pic.png" />
             </div>
           </div>
-          <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
+          <h1 className="mb-5 text-3xl font-bold">Transforming Ideas into Seamless Solutions</h1>
         </div>
       </div>
     </div>
