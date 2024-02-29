@@ -8,7 +8,6 @@ export default function Home() {
       minHeight: "100vh"
     }}>
       <HeroSection/>
-      <ProjectSection/>
     </div>
   )
 }

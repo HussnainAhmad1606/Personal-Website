@@ -1,3 +1,4 @@
+import ProjectSection from '@/components/ProjectSection'
 import Image from 'next/image'
 
 export default function Home() {
@@ -5,7 +6,7 @@ export default function Home() {
     <div style={{
       minHeight: "100vh"
     }}>
-    My Projects
+    <ProjectSection/>
   </div>
   )
 }

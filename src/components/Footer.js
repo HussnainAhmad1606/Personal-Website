@@ -12,8 +12,8 @@ function Footer() {
     <p>Copyright © 2024 - Hussnain Ahmad</p>
   </aside> 
   <nav className="text-2xl grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-    <a target='_blank' href='https://linkedin.com/in/Hussnain-Ahmad/'>
-    <FaLinkedin/>
+    <a className='' target='_blank' href='https://linkedin.com/in/Hussnain-Ahmad/'>
+    <FaLinkedin />
     </a>
     <a target='_blank' href='https://github.com/HussnainAhmad1606/'>
     <RxGithubLogo/>
