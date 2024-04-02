@@ -2,18 +2,38 @@
 import React, {useState} from 'react'
 
 function ContactMe() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState('');
+
+  const [msg, setMsg] = useState('');
+
+  
+  const sendEmail = () => {
+    fetch("/api/mail/handleMailSend", {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        msg: msg
+      })
+    })
+  }
     const [isShow, setIsShow] = useState(false);
     const [showMessage, setShowMessage] = useState('');
-    const [message, setMessage] = useState('');
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
+  
+
+
     const [alertType, setAlertType] = useState('success');
     const sendMessage = () => {
-        if (name == '' || email == '' || message == '') {
+        if (name == '' || email == '' || msg == '') {
             setShowMessage("Please Fill all the form");
             setAlertType("warning");
         }
         else {
+          sendEmail();
             setShowMessage("Message sent successfully");
             setAlertType("success");
         }
@@ -48,7 +68,7 @@ function ContactMe() {
   <div className="label">
     <span className="label-text">Your Message: </span>
   </div>
-  <textarea value={message} onChange={e=>setMessage(e.target.value)} style={{
+  <textarea value={msg} onChange={e=>setMsg(e.target.value)} style={{
     width: "320px"
   }} className="textarea textarea-bordered h-50" placeholder=""></textarea>
 

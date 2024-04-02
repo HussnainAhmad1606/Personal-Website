@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import "@/css/singleProject.css"
-function ProjectCard({name, images, description, link, techStack, githubLink, id}) {
+function ProjectCard({name, cover, description, demo, techStack, githubLink, id}) {
 
     const openModel = ()=>{
         document.getElementById(`my_modal_${id}`).showModal()
@@ -9,22 +9,22 @@ function ProjectCard({name, images, description, link, techStack, githubLink, id
   return (
 <>
     <div className="mx-20 my-10 card w-96 bg-base-100 shadow-xl">
-  <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+  <figure><img src={cover} alt={name + " cover img"} /></figure>
   <div className="card-body">
     <h2 className="card-title">{name}</h2>
-    <div className='flex'>
+    <div className='flex flex-wrap'>
 
     {
         techStack.map((tech)=>{
-            return <span className="mr-2 badge badge-accent">{tech}</span>
+            return <span className="m-2 badge badge-accent">{tech}</span>
         })
     }
     </div>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
+    <p>{description}</p>
     <div className="card-actions justify-end">
       <button className="btn btn-primary" onClick={()=>{
         openModel();
-      }}>Buy Now</button>
+      }}>Open</button>
     </div>
   </div>
 </div>
@@ -36,6 +36,7 @@ function ProjectCard({name, images, description, link, techStack, githubLink, id
     <div className="modal-action">
       <form method="dialog">
         {/* if there is a button, it will close the modal */}
+    <a href={demo} className='mx-2 btn btn-primary' target='_blank'>Open Demo</a>
         <button className="btn">Close</button>
       </form>
     </div>

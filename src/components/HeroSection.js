@@ -19,10 +19,10 @@ function HeroSection() {
         <div className="max-w-md">
           <div className="avatar">
             <div className="w-20 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-              <img src="pic.png" />
+              <img src="pic.jpg" />
             </div>
           </div>
-          <h1 className="mb-5 text-3xl font-bold">Transforming Ideas into Seamless Solutions</h1>
+          <h1 className="mb-5 text-3xl font-bold">Revolutionize Your Online Presence with Tailored Web Solutions</h1>
         </div>
       </div>
     </div>

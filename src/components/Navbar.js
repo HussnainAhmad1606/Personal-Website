@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
+import ThemeController from './ThemeController'
 
 function Navbar() {
   return (
@@ -32,6 +33,7 @@ function Navbar() {
     </ul>
   </div>
   <div className="navbar-end">
+    <ThemeController/>
   </div>
 </div>
   )
