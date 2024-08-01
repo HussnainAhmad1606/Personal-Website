@@ -1,8 +1,11 @@
 "use client"
 import React, { useEffect, useState } from 'react'
 import ProjectCard from './ProjectCard'
-
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import '@splidejs/react-splide/css/core';
+import '@splidejs/react-splide/css';
 function ProjectSection() {
+    const [currentIndex, setCurrentIndex] = useState(0);
   const [projects, setProjects] = useState([]);
   const [isLoading, setIsLoading] = useState(false)
   const getProjects = async() => {
@@ -27,14 +30,29 @@ function ProjectSection() {
         ):null
       }
 
-    <div className='grid grid-cols-1 sm:grid-cols-2'>
-      {
-        projects.map((project, index)=> {
-        return <ProjectCard key={"project"+project.id} demo={project.demo} cover={project.cover} id={project.id} name={project.name} description={project.description} techStack={project.technologies}/>
+
+
+        <Splide  options={ {
+          rewind: true,
+        perPage: 3,
+        perMove: 1,
+        gap    : '1rem',
+      focus  : 'center',
+      } }>
+
+  {
+    projects.map((project, index)=> {
+      return <SplideSlide
+     
+      
+      >
+          <ProjectCard key={"project"+project.id} demo={project.demo} cover={project.cover} id={project.id} name={project.name} description={project.description} techStack={project.technologies}/>
+          </SplideSlide>
+        
 
         })
       }
-        </div>
+</Splide>
     </div>
     </div>
   )

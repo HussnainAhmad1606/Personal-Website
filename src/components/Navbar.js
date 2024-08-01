@@ -13,7 +13,9 @@ function Navbar() {
       <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
       <li><Link href={"/"}>Home</Link></li>
       <li><Link href={"/projects"}>Projects</Link></li>
-      <li><Link href={"/my-links"}>Links</Link></li>
+      <li><Link href={"/playground"}>Playground</Link></li>
+
+      {/* <li><Link href={"/my-links"}>Links</Link></li> */}
       <li><Link href={"/about"}>About</Link></li>
       
       <li><Link href={"/contact"}>Contact</Link></li>
@@ -25,7 +27,8 @@ function Navbar() {
     <ul className="menu menu-horizontal px-1">
       <li><Link href={"/"}>Home</Link></li>
       <li><Link href={"/projects"}>Projects</Link></li>
-      <li><Link href={"/my-links"}>Links</Link></li>
+      <li><Link href={"/playground"}>Playground</Link></li>
+      {/* <li><Link href={"/my-links"}>Links</Link></li> */}
       
       <li><Link href={"/about"}>About</Link></li>
       <li><Link href={"/contact"}>Contact</Link></li>

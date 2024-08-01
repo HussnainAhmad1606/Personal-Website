@@ -30,10 +30,30 @@
       "id": 4,
       "technologies": ["Next JS", "Tailwind CSS", "MongoDB", "Firebase", "PostHog"],
       "name": "LogFusion",
-      "description": "LogFusion is Social-Networking platform for professionals. It includes features of daily streaks, auto-portfolio making, career visualization & project management. Users can share about their learnings and experimental projects.",
+      "description": "LogFusion is Social-Networking platform for professionals. It includes features of daily streaks, auto-portfolio making, career visualization & project management.",
+      "details": "LogFusion is Social-Networking platform for professionals. It includes features of daily streaks, auto-portfolio making, career visualization & project management. Users can share about their learnings and experimental projects.",
       "demo": "https://logfusion.com",
       "cover": "/logfusion.PNG"
 
+    },
+        {
+      "id": 5,
+      "technologies": ["Next JS", "Tailwind CSS", "MongoDB", "Firebase", "Gemini AI"],
+      "name": "MyStudyMate",
+      "description": "MyStudyMate is an AI study companion that helps students create and manage their study schedules with ease.",
+      "details": "LogFusion is Social-Networking platform for professionals. It includes features of daily streaks, auto-portfolio making, career visualization & project management. Users can share about their learnings and experimental projects.",
+      "demo": "https://github.com/HussnainAhmad1606/MyStudyMate",
+      "cover": "/mystudymate.png"
+
+    },
+        {
+      "id": 6,
+      "technologies": ["Django", "HTML", "CSS", "JavaScript", "SQLite"],
+      "name": "Developers Hub",
+      "description": "Developers Hub is a platform to find Developers of your preferred technologies within a budget.",
+      "details": "LogFusion is Social-Networking platform for professionals. It includes features of daily streaks, auto-portfolio making, career visualization & project management. Users can share about their learnings and experimental projects.",
+      "demo": "https://github.com/HussnainAhmad1606/Developers-Hub-Hackathon-Project",
+      "cover": "/developers-hub.png"
     }
 ]
   }

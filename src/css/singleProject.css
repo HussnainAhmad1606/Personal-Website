@@ -4,7 +4,14 @@
 }
 
 .card:hover {
-    -webkit-box-shadow:0px 0px 46px 2px rgba(255,255,255,1);
-    -moz-box-shadow: 0px 0px 46px 2px rgba(255,255,255,1);
-    box-shadow: 0px 0px 46px 2px rgba(255,255,255,1);
+    -webkit-box-shadow:0px 0px 20px 2px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 20px 2px rgba(255,255,255,1);
+    box-shadow: 0px 0px 20px 2px rgba(255,255,255,1);
+}
+
+
+ul.splide__list li:not(.is-active) {
+    opacity: 0.5;
+    transition: 0.4s ease-in-out;
+    filter: blur(2px);
 }
