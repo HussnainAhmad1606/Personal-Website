@@ -21,7 +21,7 @@ function Footer() {
     <a target='_blank' href='https://twitter.com/PsychoTheCoder/'>
     <FaXTwitter/>
     </a>
-    <a target='_blank' href='https://youtube.com/@DrThePsycho'>
+    <a target='_blank' href='https://www.youtube.com/@psychothecoder'>
     <FaYoutube/>
     </a>
   </nav>

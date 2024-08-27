@@ -16,13 +16,13 @@ export default function Home() {
 
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
 
-{/* <PostCard cover={"https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} title={"Test Article"} id={"543324"} tags={["Firebase", "Web dev","2", "#", "Webb"]} description={"This is testing article description"}/> */}
+<PostCard cover={"/wklyship.png"} title={"WklyShip"} id={"wklyship"} tags={["Web", "Android"]} description={"WklyShip is a challenge, where For the rest of 2024, I’ll be building one project per week across various domains"}/>
 
 </div>
 
-  </div>
-<p className='text-center text-3xl font-bold'>COMING SOON!</p>
+</div>
 
-    </div>
+</div>
+ 
   )
 }
